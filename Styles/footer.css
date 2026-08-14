@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  border-top: 10px solid #e9b200;
+  background-color: #ffef20;
+  color: black;
+  padding: 20px;
+  text-align: left;
+  margin-top: auto;
+  height: 40px;
+  font-size: 20px;
+}

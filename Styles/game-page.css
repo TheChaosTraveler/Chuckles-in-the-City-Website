@@ -1,0 +1,30 @@
+.game {
+  margin-top: 20px;
+  width: 640px;
+  height: 400px;
+}
+
+.game-outline {
+  display: flex;
+  flex-direction: row;
+  background-color: #e9b200;
+  padding: 20px 40px 40px 40px;
+  border-radius: 60px;
+}
+
+.game-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title-text {
+  font-size: 50px;
+  text-align: center;
+}
+
+.game-title-text {
+  color: #e9b200;
+  font-weight: bold;
+  text-align: center;
+}
