@@ -69,60 +69,100 @@
           About
         </p>
 
-        <section class="flex">
-          <div class="full-about-flex">
-            <div class="image-div">
-              <img src="Pictures/Chuckles Logo.png">
+          
+          
+          
+
+            
+
+          <section class="full-about-flex">
+            <div class="selection-and-about">
+              <div class="selection-tab">
+                <button class="js-chuckles-in-the-city-button tab-button tab-button-selected">Chuckles in the City</button>
+              
+                <button class="js-chuckles-button tab-button">Chuckles</button>
+              
+                <button class="js-floating-head-button tab-button">Floating Head</button>
+              
+                <button class="js-chuckiladre-button tab-button">Chuckiladre</button>
+              </div>
+
+              <div class="about-tab">
+                <div class="image-div">
+                  <img class="image js-image" src="Pictures/Chuckles Logo.png">
+                </div>
+                <div class="about-flex">
+                  <p class="js-about about">
+                    <strong>Chuckles in the City</strong><br>
+                    "Chuckles in the City" is a video game originally released on March 1st, 2022, on Scratch.<br>
+                    It has since been updated several times, adding new content and fixes.<br>
+                    The game involves you controlling the character "Chuckles," as you travel into the city to use a mech to defeat
+                    "The Floating Head."
+                  </p>
+                </div>
+              </div>              
             </div>
-            <div class="about-flex">
-              <p class="about">
-                <strong>Chuckles in the City</strong><br>
+            
+          </section>
+
+        <script>
+          document.querySelector('.js-image').classList.add('logo-image');
+
+          document.querySelector('.js-chuckles-in-the-city-button').addEventListener("click", chucklesInTheCityInfo)
+
+          document.querySelector('.js-chuckles-button').addEventListener("click", chucklesInfo)
+
+          document.querySelector('.js-floating-head-button').addEventListener("click", floatingHeadInfo)
+
+          document.querySelector('.js-chuckiladre-button').addEventListener("click", chuckiladreInfo)
+
+          function chucklesInTheCityInfo () {
+            document.querySelector('.js-image').classList.add('logo-image');
+            document.querySelector('.tab-button-selected').classList.remove('tab-button-selected');
+            document.querySelector('.js-chuckles-in-the-city-button').classList.add('tab-button-selected');
+            document.querySelector('.js-image').src = "Pictures/Chuckles Logo.png";
+            document.querySelector('.js-about').innerHTML = `<strong>Chuckles in the City</strong><br>
                 "Chuckles in the City" is a video game originally released on March 1st, 2022, on Scratch.<br>
                 It has since been updated several times, adding new content and fixes.<br>
-                The game involves you controlling the character "Chuckles," as you travel into the city to use a mech to defeat "The Floating Head."
-              </p>
-            </div>
-          </div>
+                The game involves you controlling the character "Chuckles," as you travel into the city to use a mech to defeat
+                "The Floating Head."`;
+          }
 
-          <div class="full-about-flex">
-          <div class="image-div">
-            <img class="image" src="Pictures/Chuckles.png">
-          </div>
-          <div class="about-flex">
-            <p class="about">
-              <strong>Chuckles</strong><br>
+          function chucklesInfo () {
+            document.querySelector('.js-image').classList.remove('logo-image');
+            document.querySelector('.tab-button-selected').classList.remove('tab-button-selected');
+            document.querySelector('.js-chuckles-button').classList.add('tab-button-selected');
+            document.querySelector('.js-image').src = "Pictures/Chuckles.png";
+            document.querySelector('.js-about').innerHTML = `
+            <strong>Chuckles</strong><br>
               Chuckles is the main protagonist of the video game "Chuckles in the City."<br>
               He is a yellow stickman and typically has red eyes, though he is sometimes depicted as having orange eyes.
-            </p>
-          </div>
-        </div>
-        </section>
+            `;
+          }
 
-        <section class="flex">
-          <div class="full-about-flex">
-            <div class="image-div">
-              <img class="image" src="Pictures/Floating Head.png">
-            </div>
-            <div class="about-flex">
-              <p class="about">
-                <strong>The Floating Head</strong><br>
+          function floatingHeadInfo () {
+            document.querySelector('.js-image').classList.remove('logo-image');
+            document.querySelector('.tab-button-selected').classList.remove('tab-button-selected');
+            document.querySelector('.js-floating-head-button').classList.add('tab-button-selected');
+            document.querySelector('.js-image').src = "Pictures/Floating Head.png";
+            document.querySelector('.js-about').innerHTML = `<strong>The Floating Head</strong><br>
                 The Floating Head is one of Chuckles' nemeses.<br>
-                It is mysterious in that it has no known origins or motives other than to cause mass destruction.
-            </div>
-          </div>
-        
-          <div class="full-about-flex">
-            <div class="image-div">
-              <img class="image" src="Pictures/Chuckiladre.jpg">
-            </div>
-            <div class="about-flex">
-              <p class="about">
-                <strong>Chuckiladre</strong><br>
+                It is mysterious in that it has no known origins or motives other than to cause mass destruction.`;
+          }
+
+          function chuckiladreInfo () {
+            document.querySelector('.js-image').classList.remove('logo-image');
+            document.querySelector('.tab-button-selected').classList.remove('tab-button-selected');
+            document.querySelector('.js-chuckiladre-button').classList.add('tab-button-selected');
+            document.querySelector('.js-image').src = "Pictures/Chuckiladre.jpg";
+            document.querySelector('.js-about').innerHTML = `
+            <strong>Chuckiladre</strong><br>
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-              </p>
-            </div>
-          </div>
-        </section>  
+            `;
+          }
+
+        
+        </script>  
       </div> 
       <footer class="footer">
         &#169; 2026 TheChaosTraveler. All rights reserved.

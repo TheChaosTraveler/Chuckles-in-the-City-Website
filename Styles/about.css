@@ -5,14 +5,6 @@
   font-weight: bold;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-bottom: 50px;
-  flex-wrap: wrap;
-}
-
 .about-flex {
   display: flex;
   flex-direction: row;
@@ -48,6 +40,13 @@
   border-bottom-right-radius: 30px;
 }
 
+.logo-image {
+  background-color: white;
+  width: 250px;
+  height: 268px;
+  object-fit: contain;
+}
+
 .image-div {
   display: flex;
   flex-direction: column;
@@ -58,7 +57,45 @@
 
 .full-about-flex {
   display: flex;
+  margin: auto;
   border: 25px solid #e9b200;
   max-width: 750px;
   border-radius: 30px;
+}
+
+.selection-and-about {
+  display: flex;
+  flex-direction: column; 
+}
+
+.selection-tab {
+  background-color: #ffef20;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button {
+  background-color: #ffef20;
+  padding: 20px 20px;
+  border-radius: 30px;
+  margin: 5px 5px;
+  border: 6px solid #e9b200;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  opacity: 0.8;
+}
+
+.tab-button:active {
+  opacity: 0.6;
+}
+
+.tab-button-selected {
+  background-color: #e9b200;
+}
+
+.about-tab {
+  display: flex;
 }
