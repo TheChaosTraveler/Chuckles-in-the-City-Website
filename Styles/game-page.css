@@ -12,6 +12,11 @@
   border-radius: 60px;
 }
 
+.bonus-game-outline,
+.game-outline {
+  
+}
+
 .game-div {
   display: flex;
   flex-direction: row;

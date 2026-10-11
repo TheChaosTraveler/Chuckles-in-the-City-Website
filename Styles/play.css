@@ -37,6 +37,45 @@
   background-color: #ffef20;
 }
 
+.bonus-game-outline {
+  height: 327px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bonus-game-box-div {
+  display: flex;
+  justify-content: center;
+}
+
+.bonus-game-search-border {
+  margin-top: 50px;
+  background-color: #e9b200;
+  padding: 12px 12px;
+  border-radius: 25px;
+}
+
+.bonus-game-input-box {
+  border: solid 10px #ffef20;
+  border-radius: 16px;
+  height: 75px;
+  width: 750px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bonus-game-input-box::placeholder {
+  font-size: 16px;
+}
+
+.bonus-question-mark {
+  color: #e9b200;
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .game-image-div {
   width: 250px;
   height: 200px;
@@ -87,3 +126,28 @@
   font-size: 20px;
 }
 
+.game-unlock-text {
+  color: #e9b200;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.reset-games-button {
+  background-color: #ffef20;
+  border: #e9b200 solid 10px;
+  border-radius: 20px;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.reset-games-button:hover {
+  opacity: 0.9;
+}
+
+.reset-games-button:active {
+  opacity: 0.8;
+}
