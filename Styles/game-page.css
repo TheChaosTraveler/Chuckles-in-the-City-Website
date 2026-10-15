@@ -12,10 +12,6 @@
   border-radius: 60px;
 }
 
-.bonus-game-outline,
-.game-outline {
-  
-}
 
 .game-div {
   display: flex;
@@ -32,4 +28,5 @@
   color: #e9b200;
   font-weight: bold;
   text-align: center;
+  margin: 50px 0px;
 }
