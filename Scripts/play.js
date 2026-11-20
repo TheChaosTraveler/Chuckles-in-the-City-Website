@@ -34,8 +34,8 @@ function unlockGames() {
     chuckiladre();
     unlockedGames.chuckiladre = 1;
     localStorage.setItem('unlocks', JSON.stringify(unlockedGames));
-  } else if (bonusGameInput.value === '3d pre-alpha 1') {
-    window.location.href = '3d-alpha-1.html';
+  } else if (bonusGameInput.value === '3d pre-alpha') {
+    window.location.href = '3d-pre-alpha.html';
   }
 }
 
